@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon"
+        href="//erigostore.co.id/cdn/shop/files/New_Logo_Erigo_81faf464-002f-434b-bae0-632202133822_32x32.png?v=1692002740"
+        type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gray: '#757575',
+                        navy: '#1B2E57',
+                        red: '#E95144',
+                        yellow: '#FFBB49',
+                        grayRating: '#D9D9D9',
+                        yellowRating: '#FACC15',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Payment Process</title>
+</head>
+
+<body class="min-h-screen bg-navy flex flex-col justify-center items-center">
+    <div class="relative bg-white rounded-xl px-5 py-6 xl:w-full max-w-screen-lg w-full mt-10 mx-auto"
+        style="align-self: flex-start;">
+        <h1 class="text-[17px] font-bold ml-4 uppercase">Your Purchase</h1>
+
+        <div class="grid grid-cols-5">
+            <div class="col-span-1">
+                <h1 class="text-[15px] font-medium ml-4">Product</h1>
+            </div>
+
+            <div class="col-span-2">
+                <div class="flex flex-col items-start">
+                    <h1 class="text-black text-base font-semibold">Erigo T-Shirt Basic Olive White Unisex</h1>
+                    <p class="text-gray text-sm font-normal">Size : XL</p>
+                </div>
+
+                <div class="flex flex-col items-start mt-2">
+                    <h1 class="text-black text-base font-semibold">Erigo Chino Pants Sirius Black</h1>
+                    <p class="text-gray text-sm font-normal">Size : 32</p>
+                </div>
+            </div>
+
+            <div class="col-span-2">
+                <div class="flex items-center justify-evenly">
+                    <div class="flex flex-col items-start">
+                        <h1 class="text-[15px] font-medium ml-4">Payment Method</h1>
+                        <h1 class="text-[15px] font-medium ml-4">Total</h1>
+                    </div>
+
+                    <div class="flex flex-col items-start">
+                        <img src="./assets/img/qris.jpg" alt="payment_method" class="w-auto h-10">
+                        <p class="text-black text-base font-semibold">Rp.750.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex flex-col items-center justify-center mx-auto my-[50px]">
+        <div class="flex items-center justify-center gap-14">
+            <h3 class="text-xl font-medium text-white">Silakan selesaikan pembayaran Anda dalam</h3>
+            <span class="text-xl font-medium text-white">0:15:09</span>
+        </div>
+
+        <div class="mt-[30px]">
+            <h3 class="max-w-lg text-xl font-medium text-white">
+                Buka m-banking atau e-Wallet dan pindai kode QR untuk
+                menyelesaikan pembayaran
+            </h3>
+        </div>
+
+        <div class="mt-[50px]">
+            <h3 class="text-3xl font-bold text-white">Pindai Kode QR</h3>
+        </div>
+
+        <div class="mt-[50px]">
+            <img src="./assets/img/barcode.jpeg" alt="barcode" class="w-[500px] h-[500px]">
+        </div>
+
+        <div class="mt-[70px]">
+            <p class="max-w-xs text-base text-center font-normal text-white">
+                Mohon diingat bahwa kode QR hanya
+                dapat dipindai sekali untuk
+                mencegah saldo terpotong dua kali
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
