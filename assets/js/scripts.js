@@ -69,34 +69,34 @@ function updateQuantity() {
 }
 
 function handleLogin(e) {
-    e.preventDefault();
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
+  e.preventDefault();
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
 
-    if (email === 'admin@gmail.com' && password === 'admin') {
-      swal({
-        title: "Success!",
-        text: "Login Success!",
-        icon: "success",
-        duration: 1000,
-        buttons: false,
-      });
-      var userData = {
-        email : email,
-        password : password,
-      }
-      localStorage.setItem ('userAcc', JSON.stringify(userData))
-      setTimeout(function() {
-        window.location = './'
-      }, 1000)
-    } 
-    else {
-      swal({
-        title: "Failed!",
-        text: "Login Failed!",
-        icon: "error",
-        duration: 1000,
-        buttons: false,
-      });
+  if (email === 'admin@gmail.com' && password === 'admin') {
+    swal({
+      title: "Success!",
+      text: "Login Success!",
+      icon: "success",
+      duration: 1000,
+      buttons: false,
+    });
+    var userData = {
+      email : email,
+      password : password,
     }
-  };
+    localStorage.setItem ('userAcc', JSON.stringify(userData))
+    setTimeout(function() {
+      window.location = './'
+    }, 1000)
+  } 
+  else {
+    swal({
+      title: "Failed!",
+      text: "Login Failed!",
+      icon: "error",
+      duration: 1000,
+      buttons: false,
+    });
+  }
+};
